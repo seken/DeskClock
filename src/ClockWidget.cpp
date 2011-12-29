@@ -10,6 +10,7 @@ ClockWidget::ClockWidget(QWidget *parent) :
 	QGridLayout *layout = new QGridLayout();
 	setLayout(layout);
 	m_time->setAlignment(Qt::AlignHCenter);
+	m_time->setStyleSheet("QLabel{font-size:105pt;}");
 	layout->addWidget(m_time, 1, 0, 1, 4);
 	layout->addWidget(m_date, 0, 3);
 	connect(&m_timer, SIGNAL(timeout()), this, SLOT(update()));

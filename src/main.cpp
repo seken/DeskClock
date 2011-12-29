@@ -14,6 +14,7 @@ int main(int argc, char **argv) {
 	if (QApplication::desktop()->width() <= 1024) {
 		window.showFullScreen();
 	} else {
+		window.resize(1024, 600);
 		window.show();
 	}
 

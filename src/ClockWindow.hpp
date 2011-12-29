@@ -1,3 +1,4 @@
+#pragma once
 #include <QMainWindow>
 
 class ClockWindow : public QMainWindow {

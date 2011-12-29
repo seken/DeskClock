@@ -2,11 +2,15 @@ set(DeskClock_SRCS
 	main.cpp
 	ClockWindow.cpp
 	ClockWidget.cpp
+	MainWidget.cpp
+	MenuWidget.cpp
 )
 
 set(DeskClock_HDRS
 	ClockWindow.hpp
 	ClockWidget.hpp
+	MainWidget.hpp
+	MenuWidget.hpp
 )
 
 qt4_wrap_cpp(DeskClock_HDRS_MOC ${DeskClock_HDRS})
