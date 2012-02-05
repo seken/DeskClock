@@ -3,6 +3,7 @@
 #include "ClockWidget.hpp"
 #include "MenuWidget.hpp"
 #include <QPushButton>
+#include "QWeatherModel.hpp"
 
 MainWidget::MainWidget(QWidget *parent) :
 		QWidget(parent),
@@ -10,7 +11,10 @@ MainWidget::MainWidget(QWidget *parent) :
 	QVBoxLayout *layout = new QVBoxLayout();
 	setLayout(layout);
 	layout->addLayout(m_layout);
-	m_layout->addWidget(new ClockWidget(this));
+
+	QWeatherModel *wm = new QWeatherModel("filton,uk", 30, this);
+
+	m_layout->addWidget(new ClockWidget(wm, this));
 	m_layout->addWidget(new MenuWidget(this));
 
 	QPushButton *menuButton = new QPushButton(tr("Menu"), this);

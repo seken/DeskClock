@@ -1,12 +1,13 @@
 #include <QWidget>
 #include <QLabel>
 #include <QTimer>
+#include "QWeatherModel.hpp"
 
 class ClockWidget : public QWidget {
 	Q_OBJECT;
 
 	public:
-		ClockWidget(QWidget *parent = NULL);
+		ClockWidget(QWeatherModel *mdl, QWidget *parent = NULL);
 		~ClockWidget();
 
 	private slots:

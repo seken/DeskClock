@@ -4,6 +4,8 @@ set(DeskClock_SRCS
 	ClockWidget.cpp
 	MainWidget.cpp
 	MenuWidget.cpp
+	QWeatherModel.cpp
+	QWeather.cpp
 )
 
 set(DeskClock_HDRS
@@ -11,6 +13,8 @@ set(DeskClock_HDRS
 	ClockWidget.hpp
 	MainWidget.hpp
 	MenuWidget.hpp
+	QWeather.hpp
+	QWeatherModel.hpp
 )
 
 qt4_wrap_cpp(DeskClock_HDRS_MOC ${DeskClock_HDRS})

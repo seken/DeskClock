@@ -2,7 +2,7 @@
 #include <QGridLayout>
 #include <QDateTime>
 
-ClockWidget::ClockWidget(QWidget *parent) :
+ClockWidget::ClockWidget(QWeatherModel *mdl, QWidget *parent) :
 		QWidget(parent),
 		m_time(new QLabel(tr("time"), this)),
 		m_date(new QLabel(tr("date"), this)),
